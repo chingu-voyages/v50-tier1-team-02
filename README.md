@@ -39,3 +39,4 @@ coding!
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
 - Jake: [GitHub](https://github.com/Dev-Wy/) / [LinkedIn](https://www.linkedin.com/in/jakewyantdeveloper/)
 - Valerie: [GitHub](https://github.com/val-ue)
+- MayaPower [GitHub](https://github.com/maya17power)
