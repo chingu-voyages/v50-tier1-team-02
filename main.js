@@ -16,7 +16,7 @@ async function getData() {
 const menuData = getData();
 
 menuData.then((data)=>{
-    //iterrate throw obj
+    //iterrate through obj
     //output ID and NAME
     //send to be rendered
     data.bbqs.map((i)=> {
