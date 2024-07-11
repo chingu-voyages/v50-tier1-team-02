@@ -36,6 +36,6 @@ coding!
 
 - Teammate name #1: [GitHub](https://github.com/Dev-Wy/) / [LinkedIn](https://linkedin.com/in/jakewyantdeveloper)
 - Teammate name #2: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
-- Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Sam: [GitHub](https://github.com/Samuel-Driggs) / [LinkedIn](https://linkedin.com/in/Samuel-Angelos)
 - Jake: [GitHub](https://github.com/Dev-Wy/) / [LinkedIn](https://www.linkedin.com/in/jakewyantdeveloper/)
 - Valerie: [GitHub](https://github.com/val-ue)
