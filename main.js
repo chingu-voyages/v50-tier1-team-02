@@ -21,12 +21,12 @@ menuData.then((data)=>{
     //send to be rendered
     data.bbqs.map((i)=> {
         console.log(i)
-        const {id, name} = i;
-        renderElement(id,name);
+        const {id, name, img, dsc} = i;
+        renderElement(id,name,img, dsc);
     });
 });
 
-function renderElement(id, name){
+function renderElement(id, name, img, dsc){
     //create new list element
     //add card property to list item
     //add id and name to element
@@ -36,6 +36,9 @@ function renderElement(id, name){
     listItem.innerHTML = `
     <li class='list-group-item'>ID: ${id}</li>
     <li class='list-group-item'>NAME: ${name}</li>
+    <li class='list-group-item'>DESCRIPTION: ${dsc}</li>
+    <img src="${img}" alt="${name}" class='list-group-img'/> 
+
     `;
     itemList.appendChild(listItem);
 };
