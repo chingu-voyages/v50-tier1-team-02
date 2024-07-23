@@ -19,11 +19,21 @@ menuData.then((data)=>{
     //iterrate through obj
     //output ID and NAME
     //send to be rendered
-    data.drinks.map((i)=> {
+    data.bbqs.map((i)=> {
         console.log(i)
         const {id, name, img, dsc, price} = i;
         renderElement(id,name,img, dsc, price);
     });
+    data.drinks.map((i)=> {
+      console.log(i)
+      const {id, name, img, dsc, price} = i;
+      renderElement(id,name,img, dsc, price);
+  });
+  data.desserts.map((i)=> {
+    console.log(i)
+    const {id, name, img, dsc, price} = i;
+    renderElement(id,name,img, dsc, price);
+});
 
 
   
