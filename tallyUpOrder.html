@@ -16,6 +16,14 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <!-- FONTAWSOME -->
+    <script
+    defer
+      src="https://kit.fontawesome.com/df21ef76d6.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script defer src="main.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Cruise Menu</title>
@@ -28,18 +36,15 @@
           <div class="card" style="width: 25rem">
             <div class="row" id="tallyUpOrders_buttons">
               <div class="col">
-                <button type="button" class="btn btn-success" id="addItemBtn">Add Item</button>
+                <button type="button" class="btn btn-info" id="addItemBtn">
+                    <i class="fa-sharp-duotone fa-solid fa-burger fa-sm"></i> Add Item
+                </button>
               </div>
             </div>
             <div class="card-body">
               <h1 class="card-title">Tally Up Orders</h1>
-              <ul class="list-group list-group-flush text-start">
-                <li class="list-group-item bg-info">
-                  <div class="row">
-                    <div class="col">Item Name</div>
-                    <div class="col text-end">Item Price</div>
-                  </div>
-                </li>
+              <ul class="list-group list-group-flush text-start" id="tallyUpOrders_list">
+                
               </ul>
               <div class="card-footer">
                 <div class="row">
