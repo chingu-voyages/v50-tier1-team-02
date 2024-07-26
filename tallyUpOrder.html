@@ -37,7 +37,7 @@
             <div class="row" id="tallyUpOrders_buttons">
               <div class="col">
                 <button type="button" class="btn btn-info" id="addItemBtn">
-                    <i class="fa-sharp-duotone fa-solid fa-burger fa-sm"></i> Add Item
+                    <i class="fa-sharp-duotone fa-solid fa-burger fa-xl"></i> Add Item
                 </button>
               </div>
             </div>
@@ -60,13 +60,46 @@
               </div>
               <div class="card-footer">
                 <div class="row">
+                  <div class="card-title text-start">Tip:</div>
+                  <div class="row tip-row">
+                    <div class="col-sm-6 mb-3 mb-sm-0 tip_container" id="tip_10">
+                      <div class="card" id="tip">
+                        <div class="card-body">
+                          <h5 class="card-title">10%</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 mb-3 mb-sm-0 tip_container" id="tip_15">
+                      <div class="card" id="tip">
+                        <div class="card-body">
+                          <h5 class="card-title">15%</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 mb-3 mb-sm-0 tip_container" id="tip_20">
+                      <div class="card" id="tip">
+                        <div class="card-body">
+                          <h5 class="card-title">20%</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row">
                   <div class="col text-start">Grand Total:</div>
                   <div class="col text-end" id="grandTotal"></div>
                 </div>
               </div>
+              <div class="col text-end">
+                <button type="button" class="btn btn-success btn-lg" id="orderBtn">
+                  <i class="fa-solid fa-cash-register fa-lg"></i> Order
+                </button>
+              </div>
             </div>
-          </div>
-        </div>
+          </div>     
+        </div> 
       </div>
     </div>
   </body>

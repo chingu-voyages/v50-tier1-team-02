@@ -9,3 +9,12 @@
 #tallyUpOrders_buttons{
     margin-top: 5%;
 }
+.tip-row{
+    justify-content: center;
+}
+.tip_container{
+    width: auto;
+}
+#orderBtn{
+    margin-top: 5%;
+}
