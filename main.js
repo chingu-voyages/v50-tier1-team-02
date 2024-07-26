@@ -1,6 +1,7 @@
 const itemList = document.querySelector("#addItem");
 const addItemBtn = document.querySelector("#addItemBtn");
 const tallyUpOrders_list = document.querySelector("#tallyUpOrders_list");
+const taxRate = 0.0725;
 
 //total catcher
 let orderTotal = 0;
@@ -32,10 +33,16 @@ function renderItems(item, price) {
   
   //sum of all items
   orderTotal += price;
-  tallyUpOrder(orderTotal.toFixed(2));
+  tallyUpOrder(orderTotal);
 }
 
 function tallyUpOrder(total) {
-  const orderTotal = document.querySelector("#orderTotal");
-  orderTotal.innerHTML = `$${total}`;
+  const tax = total * taxRate;
+  const grandTotal = total + tax;
+  const orderTotal_element = document.querySelector("#orderTotal");
+  const tax_element = document.querySelector("#tax");
+  const grandTotal_element = document.querySelector("#grandTotal");
+  orderTotal_element.innerHTML = `$${total.toFixed(2)}`;
+  tax_element.innerHTML = `$${tax.toFixed(2)}`;
+  grandTotal_element.innerHTML = `$${grandTotal.toFixed(2)}`;
 }
