@@ -1,6 +1,8 @@
 const itemList = document.querySelector("#addItem");
 const addItemBtn = document.querySelector("#addItemBtn");
 const tallyUpOrders_list = document.querySelector("#tallyUpOrders_list");
+const tip_card = document.getElementsByClassName("tip-card");
+const orderBtn = document.querySelector("#orderBtn");
 const taxRate = 0.0725;
 
 //total catcher
@@ -30,12 +32,13 @@ function renderItems(item, price) {
   </div>
   `;
   tallyUpOrders_list.appendChild(list_item);
-  
+
   //sum of all items
   orderTotal += price;
   tallyUpOrder(orderTotal);
 }
 
+//render totals to page
 function tallyUpOrder(total) {
   const tax = total * taxRate;
   const grandTotal = total + tax;
@@ -46,3 +49,19 @@ function tallyUpOrder(total) {
   tax_element.innerHTML = `$${tax.toFixed(2)}`;
   grandTotal_element.innerHTML = `$${grandTotal.toFixed(2)}`;
 }
+
+function tip(tip) {
+  if (tip === 10) {
+    return console.log("you selected 10% tip");
+  } else if (tip === 15) {
+    return console.log("you selected 15% tip");
+  } else if(tip === 20){
+    return console.log("you selected 20% tip");
+  }
+}
+
+orderBtn.addEventListener("click", () => alert("Send to Process Order."));
+console.log(tip_card)
+tip_card.addEventListener('click',()=>{
+  console.log('tip button clicked')
+});
