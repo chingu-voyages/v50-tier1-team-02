@@ -1,7 +1,11 @@
 const itemList = document.querySelector("#addItem");
 const addItemBtn = document.querySelector("#addItemBtn");
 const tallyUpOrders_list = document.querySelector("#tallyUpOrders_list");
-const tip_card = document.getElementsByClassName("tip-card");
+
+const tipButton10 = document.querySelector("#ten");
+const tipButton15 = document.querySelector("#fifteen");
+const tipButton20 = document.querySelector("#twenty");
+
 const orderBtn = document.querySelector("#orderBtn");
 const taxRate = 0.0725;
 
@@ -46,22 +50,33 @@ function tallyUpOrder(total) {
   const tax_element = document.querySelector("#tax");
   const grandTotal_element = document.querySelector("#grandTotal");
   orderTotal_element.innerHTML = `$${total.toFixed(2)}`;
-  tax_element.innerHTML = `$${tax.toFixed(2)}`;
+  tax_element.innerHTML = `$${tax.toFixed(2)}`; 
+  document.querySelector('#tip-10').innerHTML = `$${(0.1 * grandTotal).toFixed(2)}`;
+  document.querySelector('#tip-15').innerHTML = `$${(0.15 * grandTotal).toFixed(2)}`;
+  document.querySelector('#tip-20').innerHTML = `$${(0.2 * grandTotal).toFixed(2)}`;
   grandTotal_element.innerHTML = `$${grandTotal.toFixed(2)}`;
-}
+};
+
+tipButton10.addEventListener('click',()=>{
+  console.log('10 clicked')
+});
+tipButton15.addEventListener('click',()=>{
+console.log('15 clicked')
+});
+tipButton20.addEventListener('click',()=>{
+console.log('20 clicked')
+});
 
 function tip(tip) {
-  if (tip === 10) {
-    return console.log("you selected 10% tip");
-  } else if (tip === 15) {
-    return console.log("you selected 15% tip");
-  } else if(tip === 20){
-    return console.log("you selected 20% tip");
-  }
+  console.log(tip);
+  // if (tip === 10) {
+  //   return console.log("you selected 10% tip");
+  // } else if (tip === 15) {
+  //   return console.log("you selected 15% tip");
+  // } else if(tip === 20){
+  //   return console.log("you selected 20% tip");
+  // }
 }
 
 orderBtn.addEventListener("click", () => alert("Send to Process Order."));
-console.log(tip_card)
-tip_card.addEventListener('click',()=>{
-  console.log('tip button clicked')
-});
+
