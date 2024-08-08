@@ -1,24 +1,69 @@
 const API_URL = "https://menus-api.vercel.app/";
 const itemList = document.querySelector("#addItem");
 
+const selectedBbqIds = [
+  "ribs-and-chicken-combo-pack-serves-6-8",
+  "legendary-brisket-z-man-sandwich-kit-8-pack",
+  "ribs-brisket-and-burnt-ends",
+  "18650-food-explorer-carolina-bbq-pack",
+  "hog-heaven",
+  "bbq-meat-and-sides-feast-serves-15"
+];
+
+const selectedDessertIds = [
+  "002-cafe-du-monde-coffee-and-beignets",
+  "jacques-world-famous-chocolate-chip-cookies",
+  "15259-german-chocolate-killer-brownie-tin-pack",
+  "best-seller-cupcake-dozen",
+  "original-ny-plain-cheesecake",
+  "raspberry-chocolate-pie"
+];
+
+const selectedDrinkIds = [
+  "hong-kong-boba-tea-kit-for-6",
+  "woodford-reserve-mint-julep-syrup",
+  "unicorn-parade-milkshake-kit-for-8",
+  "002-original-cold-brewed-coffee-syrup",
+  "virtual-cocktail-party-kit",
+  "chickpea-chiller-kit-for-6"
+];
+
+
+
 async function getData() {
   try {
     const response = await fetch(API_URL);
     if (response.ok) {
       const data = await response.json();
-      return data;
+
+      const selectedBbqs = data.bbqs.filter(item => selectedBbqIds.includes(item.id));
+
+      const selectedDesserts = data.desserts.filter(item => selectedDessertIds.includes(item.id));
+   
+      const selectedDrinks = data.drinks.filter(item => selectedDrinkIds.includes(item.id));
+      console.log(selectedDesserts, selectedBbqs, selectedDrinks);
+
+      return ;
+
+
     };
   } catch (error) {
     console.log(error);
   };
 };
 
+
+
 const menuData = getData();
+
+ 
 
 menuData.then((data)=>{
     //iterrate through obj
     //output ID and NAME
     //send to be rendered
+
+
     data.bbqs.map((i)=> {
         console.log(i)
         const {id, name, img, dsc, price} = i;
