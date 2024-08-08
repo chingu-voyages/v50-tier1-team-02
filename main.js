@@ -51,32 +51,27 @@ function tallyUpOrder(total) {
   const grandTotal_element = document.querySelector("#grandTotal");
   orderTotal_element.innerHTML = `$${total.toFixed(2)}`;
   tax_element.innerHTML = `$${tax.toFixed(2)}`; 
-  document.querySelector('#tip-10').innerHTML = `$${(0.1 * grandTotal).toFixed(2)}`;
-  document.querySelector('#tip-15').innerHTML = `$${(0.15 * grandTotal).toFixed(2)}`;
-  document.querySelector('#tip-20').innerHTML = `$${(0.2 * grandTotal).toFixed(2)}`;
+  const tip_10 = document.querySelector('#tip-10')
+  tip_10.innerHTML = `$${(0.1 * grandTotal).toFixed(2)}`;
+  const tip_15 = document.querySelector('#tip-15')
+  tip_15.innerHTML = `$${(0.15 * grandTotal).toFixed(2)}`;
+  const tip_20 = document.querySelector('#tip-20')
+  tip_20.innerHTML = `$${(0.2 * grandTotal).toFixed(2)}`;
   grandTotal_element.innerHTML = `$${grandTotal.toFixed(2)}`;
 };
 
-tipButton10.addEventListener('click',()=>{
-  console.log('10 clicked')
+tipButton10.addEventListener("click", () => {
+  console.log("10 clicked");
+  console.log(Number(tip_10.innerText.slice(5, 9)));
 });
-tipButton15.addEventListener('click',()=>{
-console.log('15 clicked')
+tipButton15.addEventListener("click", () => {
+  console.log("15 clicked");
+  console.log(Number(tip_15.innerText.slice(5, 9)));
 });
-tipButton20.addEventListener('click',()=>{
-console.log('20 clicked')
+tipButton20.addEventListener("click", () => {
+  console.log("20 clicked");
+  console.log(Number(tip_20.innerText.slice(5, 9)));
 });
-
-function tip(tip) {
-  console.log(tip);
-  // if (tip === 10) {
-  //   return console.log("you selected 10% tip");
-  // } else if (tip === 15) {
-  //   return console.log("you selected 15% tip");
-  // } else if(tip === 20){
-  //   return console.log("you selected 20% tip");
-  // }
-}
 
 orderBtn.addEventListener("click", () => alert("Send to Process Order."));
 
