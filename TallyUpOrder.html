@@ -1,0 +1,84 @@
+
+    <div class="container text-center" id="tallyUpOrders_container">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 30rem">
+            <div class="row" id="tallyUpOrders_buttons">
+              <div class="col">
+                <button type="button" class="btn btn-info" id="addItemBtn">
+                  <i class="fa-sharp-duotone fa-solid fa-burger fa-xl"></i> Add
+                  Item
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title">Tally Up Orders</h1>
+              <ul
+                class="list-group list-group-flush text-start"
+                id="tallyUpOrders_list"
+              ></ul>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col text-start">Total:</div>
+                  <div class="col text-end" id="orderTotal"></div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col text-start">Tax:</div>
+                  <div class="col text-end" id="tax"></div>
+                </div>
+              </div>
+              <div class="card-footer tip">
+                <div class="row">
+                  <div class="card-title text-start">Tip:</div>
+                  <div class="row tip-row">
+                    <h1 class="card-title">Tally Up Orders</h1>
+                        <div class="card tip-card">
+                            <div class="card-body tip-body">
+                                <a href="#" class="btn btn-alert" id="ten" role="button">
+                                    <h5 class="card-title">10%</h5>
+                                    <span id="tip-10">0</span>
+                                </a>
+                            </div>
+                        </div>
+                    <h5 class="card-title">10%</h5>
+                    <div class="card tip-card">
+                        <div class="card-body tip-body">
+                            <a href="#" class="btn btn-alert" id="fifteen" role="button">
+                                <h5 class="card-title">15%</h5>
+                                <span id="tip-15">0</span>
+                            </a>
+                          </div>
+                        </div>
+                    <h5 class="card-title">15%</h5>
+                        <div class="card tip-card">
+                            <div class="card-body tip-body">
+                                <a href="#" class="btn btn-alert" id="twenty" role="button">
+                                    <h5 class="card-title">20%</h5> 
+                                    <span id="tip-20">0</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col text-start">Grand Total:</div>
+                <div class="col text-end" id="grandTotal"></div>
+              </div>
+            </div>
+            <div class="col text-end">
+              <button
+                type="button"
+                class="btn btn-success btn-lg"
+                id="orderBtn">
+                <i class="fa-solid fa-cash-register fa-lg"></i> Order
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>

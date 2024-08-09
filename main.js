@@ -1,3 +1,5 @@
+
+//API for menu Items
 const API_URL = "https://menus-api.vercel.app/";
 const itemList = document.querySelector("#addItem");
 
@@ -102,3 +104,6 @@ function renderElement(id, name, img, dsc, price){
     `;
     itemList.appendChild(listItem);
 };
+
+// Order Cart
+
