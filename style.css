@@ -1,3 +1,13 @@
+body {
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+  }
+h2 {
+    font-weight: 900;
+}
+
 #tallyUpOrders_container{
     margin-top: 5%;
     margin-left: 0%;
