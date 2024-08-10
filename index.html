@@ -13,6 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+
+    <script
+      defer
+      src="https://kit.fontawesome.com/df21ef76d6.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Barbecruise</title>
   </head>
 
@@ -22,7 +29,7 @@
 <hero>
   <img src="./img/hero.png" class="mb-5"style="width: 100%" alt="barbecruise title">
 </hero>
-<!--DESSERT MENU CARDS-->
+<!--MENU CARDS-->
 <section id="meals">
   <div>
     <img src="./img/meals-title.png" style="max-width: 40%;"alt="Menu Section Title">
@@ -175,137 +182,140 @@
           </div>        
       </div>
 
-          <!-- Order Card -->
+<!-- Order Card -->
       <div class="col-md-4" id="ordercart">
         <div class="container text-center" id="tallyUpOrders_container">
-          <div class="row"> 
-              <div class="row mb-3">
-                <div class="col my-3">
-                  <div class="card mt-3" style="width: 100%; border-radius: 2.75rem; background-color: #e8e8e8">
-                    <div class="card-body">
-                      <h1 class="card-title">your order</h1>
-                      <ul
-                        class="list-group list-group-flush text-start"
-                        id="tallyUpOrders_list">
-                      </ul>
-                      <div class="row" id="tallyUpOrders_buttons">
-                        <div class="col">
-                          <button type="button" class="my-3 btn btn-primary rounded-pill" id="addItemBtn">
-                            <i class="fa-sharp-duotone fa-solid fa-burger fa-xl"></i> Add Item
-                          </button>
-                        </div>
+          <div class="container text-center" id="tallyUpOrders_container">
+            <div class="row">
+              <div class="col">
+                <div class="card mt-3" style="width: 100%; border-radius: 2.75rem; background-color: #e8e8e8">
+                  <div class="card-body">
+                    <h1 class="card-title">your order</h1>
+                    <ul
+                      class="list-group list-group-flush text-start"
+                      id="tallyUpOrders_list">
+                    </ul>
+                    <div class="row" id="tallyUpOrders_buttons">
+                      <div class="col">
+                        <button type="button" class="my-3 btn btn-primary rounded-pill" id="addItemBtn">
+                          <i class="fa-sharp-duotone fa-solid fa-burger fa-xl"></i> Add Item
+                        </button>
                       </div>
-
-                      <div class="card-footer">
-                        <div class="row">
-                          <div class="col text-start">Total</div>
-                          <div class="col text-end" id="orderTotal"></div>
-                        </div>
+                    </div>
+    
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col text-start">Total</div>
+                        <div class="col text-end" id="orderTotal"></div>
                       </div>
-                      <div class="card-footer">
-                        <div class="row">
-                          <div class="col text-start">Subtotal</div>
-                          <div class="col text-end" id="tax"></div>
-                        </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col text-start">Subtotal</div>
+                        <div class="col text-end" id="tax"></div>
                       </div>
-                      <div class="card-footer">
-                        <div class="row">
-                          <div class="card-title text-start">Add tip</div>
-                          <div class="row tip-row">
-                            <div
-                              class="col-sm-4 mb-3 mb-sm-0 tip_container"
-                              id="tip_10">
-                              <div class="card tip-card">
-                                <div class="card-body tip-body">
-                                  <a href="#" class="btn btn-alert" role="button">
-                                    <h6 class="card-title text-center d-flex justify-content-center ">10%</h6>
-                                    <span id="tenPercent"></span>
-                                  </a>
-                                </div>
+                    </div>
+                    <div class="card-footer">
+                      <div> <!--i removed "class="row" from this-->
+                        <div class="card-title text-start">Add tip</div>
+                        <div class="row tip-row">
+                          <div
+                            class="col-sm-4 mb-3 mb-sm-0 tip_container"
+                            id="tip_10">
+                            <div class="card tip-card">
+                              <div class="card-body tip-body">
+                                <a href="#" class="btn btn-alert" role="button" style="padding: 0%; border: 0%;">
+                                  <h6 class="card-title text-center d-flex justify-content-center ">10%</h6>
+                                  <span id="tenPercent"></span>
+                                </a>
                               </div>
                             </div>
-                            <div
-                              class="col-sm-4 mb-3 mb-sm-0 tip_container"
-                              id="tip_15">
-                              <div class="card tip-card">
-                                <div class="card-body tip-body">
-                                  <a href="#" class="btn btn-alert" role="button">
-                                    <h6 class="card-title d-flex justify-content-center">15%</h6>
-                                    <span id="fifteenPercent"></span>
-                                  </a>
-                                </div>
+                          </div>
+                          <div
+                            class="col-sm-4 mb-3 mb-sm-0 tip_container"
+                            id="tip_15">
+                            <div class="card tip-card">
+                              <div class="card-body tip-body">
+                                <a href="#" class="btn btn-alert" role="button" style="padding: 0%; border: 0%;">
+                                  <h6 class="card-title d-flex justify-content-center">15%</h6>
+                                  <span id="fifteenPercent"></span>
+                                </a>
                               </div>
                             </div>
-                            <div
-                              class="col-sm-4 mb-3 mb-sm-0 tip_container"
-                              id="tip_20">
-                              <div class="card tip-card">
-                                <div class="card-body tip-body">
-                                  <a href="#" class="btn btn-alert" role="button">
-                                    <h6 class="card-title d-flex justify-content-center">20%</h6>
-                                    <span id="twentyPercent"></span>
-                                  </a>
-                                </div>
+                          </div>
+                          <div
+                            class="col-sm-4 mb-3 mb-sm-0 tip_container"
+                            id="tip_20">
+                            <div class="card tip-card">
+                              <div class="card-body tip-body">
+                                <a href="#" class="btn btn-alert" role="button" style="padding: 0%; border: 0%;">
+                                  <h6 class="card-title d-flex justify-content-center">20%</h6>
+                                  <span id="twentyPercent"></span>
+                                </a>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="card-footer">
-                        <div class="row">
-                          <div class="col text-start">Total</div>
-                          <div class="col text-end" id="grandTotal"></div>
-                        </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col text-start">Total</div>
+                        <div class="col text-end" id="grandTotal"></div>
                       </div>
-                      <div class="col">
-                        <button
-                          type="button"
-                          class="mt-5 mb-3 btn btn-primary btn-lg rounded-pill"
-                          id="orderBtn">
-                          <i class="fa-solid fa-cash-register fa-lg"></i> checkout
-                        </button>
-                      </div>
+                    </div>
+                    <div class="col">
+                      <button
+                        type="button"
+                        class="mt-5 mb-3 btn btn-primary btn-lg rounded-pill"
+                        id="orderBtn">
+                        <i class="fa-solid fa-cash-register fa-lg"></i> checkout
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-          </div>
+            </div>
+          </div>            
+        </div> <!--ordertally div ends-->
 
-          <div id="payment">
-              <div class="container text-center" id="tallyUpOrders_container">
-                <div class="row">
-                  <div class="col">
-                    <div class="card mt-3" style="width: 100%; border-radius: 2.75rem; background-color: #e8e8e8">
-                      <div class="card-body">
-                        <h1 class="card-title">payment information</h1>
-                        <form>
-                          <div class="row mb-3">
-                            <div class="col-sm-12">
-                              <input type="text" class="form-control rounded-pill" placeholder="Full Name"id="textName">
-                            </div>
-                          </div>
-                          <div class="row g-3">
-                            <div class="col-sm-5">
-                              <input type="number" class="form-control rounded-pill" placeholder="6 Digit Pin"id="numberPin">
-                            </div>
-                            <div class="col-sm-7">
-                              <input type="number" class="form-control rounded-pill" placeholder="Room Number"id="numberRoom">
-                            </div>
-                            <div>
-                              <button class="text-center btn btn-primary rounded-pill" style="max-width: 40%; justify-content: center;">place payment</button>
-                            </div>
-                          </div>
-                        </form>
+        <div id="payment">
+          <div class="container text-center" id="tallyUpOrders_container">
+            <div class="row">
+              <div class="col">
+                <div class="card mt-3" style="width: 100%; border-radius: 2.75rem; background-color: #e8e8e8">
+                  <div class="card-body">
+                    <h1 class="card-title">payment information</h1>
+                    <form>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <input type="text" class="form-control rounded-pill" placeholder="Full Name"id="textName">
+                        </div>
                       </div>
-                    </div>
+                      <div class="row g-3">
+                        <div class="col-sm-5">
+                          <input type="number" class="form-control rounded-pill" placeholder="6 Digit Pin"id="numberPin">
+                        </div>
+                        <div class="col-sm-7">
+                          <input type="number" class="form-control rounded-pill" placeholder="Room Number"id="numberRoom">
+                        </div>
+                        <div>
+                          <button class="text-center btn btn-primary rounded-pill" style="max-width: 40%; justify-content: center;">place payment</button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-</section>
+        </div> <!--payment div ends-->
+
+      </div> <!--ordercart div end-->
+      
+    </div> <!--row w/3 section div ends-->
+  </div> <!--menu container div ends-->
+</section> <!--meals section ends-->
        
 
 <!--DRINKS MENU CARDS-->
@@ -462,9 +472,9 @@
       </div>
 </section>
 <!--DESSERT MENU CARDS-->
-<section id="desserts">
+<section id="desserts" style="margin-bottom: 60px;">
   <div>
-    <img src="./img/desserts-title.png" style="max-width: 40%;"alt="Menu Section Title">
+    <img src="./img/desserts-title.png" style="max-width: 40%; padding-left: 20px;"alt="Menu Section Title">
   </div>
 <div class="container">
   <div class="row">
