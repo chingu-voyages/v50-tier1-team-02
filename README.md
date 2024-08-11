@@ -38,4 +38,4 @@ coding!
 - Teammate name #2: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
 - Sam: [GitHub](https://github.com/Samuel-Driggs) / [LinkedIn](https://linkedin.com/in/Samuel-Angelos)
 - Jake: [GitHub](https://github.com/Dev-Wy/) / [LinkedIn](https://www.linkedin.com/in/jakewyantdeveloper/)
-- Valerie: [GitHub](https://github.com/val-ue)
+- Valerie: [GitHub](https://github.com/val-ue)/ [LinkedIn](https://www.linkedin.com/in/valerielabideveloper/)
