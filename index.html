@@ -27,12 +27,12 @@
 
 <!--MENU-->
 <hero>
-  <img src="./img/hero.png" class="mb-5"style="width: 100%" alt="barbecruise title">
+  <img src="./img/hero.png" class="mb-5" style="width: 100%" alt="barbecruise title">
 </hero>
 <!--MENU CARDS-->
 <section id="meals">
   <div>
-    <img src="./img/meals-title.png" style="max-width: 40%;"alt="Menu Section Title">
+    <img src="./img/meals-title.png" class="mb-5" style="max-width: 40%;"alt="Menu Section Title">
   </div>
   <div class="container">
     <div class="row">
@@ -41,11 +41,11 @@
         <!--Menu Card 1-->
           <div class="row mb-3">
             <div class="col my-3">
-              <div class="card shadow-lg border-white" style="border-radius: 2.75rem; background-color: #e8e8e8">
-                <div class="row g-0">  
+              <div class="card shadow-lg border-white" style=" border-radius: 2.75rem; background-color: #e8e8e8">
+                <div class="row g-0">
                   <div class="ms-4 my-1 col-md-4">
                     <div class="g-col-4 mt-3 border-0 bd-example bd-example-zindex-levels position-relative">
-                      <img src="./img/bg-circle.png" class="z-0 position-absolute img-fluid rounded-circle img-thumbnail" style="max-width: 120%;" alt="...">
+                      <img src="./img/bg-circle.png" class="z-0 position-absolute img-fluid rounded-circle img-thumbnail" style="max-width: 10.5em;" alt="...">
                       <img src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/79576/hog-heaven-pulled-pork-sausage-links.5012c36f6f049c131b04345c5326e4d3.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1" class="z-1 my-3 ms-3 position-absolute rounded-circle img-thumbnail" style="max-width: 97%;" alt="...">
                     </div>
                   </div>
@@ -170,8 +170,8 @@
                   </div>
                   <div class="my-1 col-md-7 d-flex justify-content-end">
                     <div class="card-body ms-4" style="max-width: 100%;">
-                      <h4 class="card-title" style="font-weight: 700;">Meals</h4>
-                      <p class="card-text">Legendary Brisket Z-Man Sandwich Kit - 8 Pack</p>
+                      <h4 class="card-title" style="font-weight: 700;">Legendary Brisket</h4>
+                      <p class="card-text">Z-Man Sandwich Kit - 8 Pack</p>
                       <p class="card-text h6">$99.99</p>
                       <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
@@ -185,10 +185,9 @@
 <!-- Order Card -->
       <div class="col-md-4" id="ordercart">
         <div class="container text-center" id="tallyUpOrders_container">
-          <div class="container text-center" id="tallyUpOrders_container">
             <div class="row">
               <div class="col">
-                <div class="card mt-3" style="width: 100%; border-radius: 2.75rem; background-color: #e8e8e8">
+                <div class="card mt-3 shadow-lg border-white" style="width: 100%; border-radius: 2.75rem; background-color: #e8e8e8">
                   <div class="card-body">
                     <h1 class="card-title">your order</h1>
                     <ul
@@ -197,7 +196,7 @@
                     </ul>
                     <div class="row" id="tallyUpOrders_buttons">
                       <div class="col">
-                        <button type="button" class="my-3 btn btn-primary rounded-pill" id="addItemBtn">
+                        <button type="button" class="my-3 btn btn-primary rounded-pill" style="font-weight: 700;" id="addItemBtn">
                           <i class="fa-sharp-duotone fa-solid fa-burger fa-xl"></i> Add Item
                         </button>
                       </div>
@@ -224,7 +223,7 @@
                             id="tip_10">
                             <div class="card tip-card">
                               <div class="card-body tip-body">
-                                <a href="#" class="btn btn-alert" role="button" style="padding: 0%; border: 0%;">
+                                <a href="#" class="btn btn-alert" role="button" style="padding: 0%; border: 0%; font-weight: 700;">
                                   <h6 class="card-title text-center d-flex justify-content-center ">10%</h6>
                                   <span id="tenPercent"></span>
                                 </a>
@@ -267,7 +266,7 @@
                     <div class="col">
                       <button
                         type="button"
-                        class="mt-5 mb-3 btn btn-primary btn-lg rounded-pill"
+                        class="mt-5 mb-3 btn btn-primary btn-lg rounded-pill" style="font-weight: 700;"
                         id="orderBtn">
                         <i class="fa-solid fa-cash-register fa-lg"></i> checkout
                       </button>
@@ -275,15 +274,15 @@
                   </div>
                 </div>
               </div>
-            </div>
           </div>            
-        </div> <!--ordertally div ends-->
+        </div> 
+        <!--ordertally div ends-->
 
-        <div id="payment">
+        <div id="payment"class="col-md-11 ms-2">
           <div class="container text-center" id="tallyUpOrders_container">
             <div class="row">
               <div class="col">
-                <div class="card mt-3" style="width: 100%; border-radius: 2.75rem; background-color: #e8e8e8">
+                <div class="card mt-3 shadow-lg border-white" style="width: 100%; border-radius: 2.75rem; background-color: #e8e8e8">
                   <div class="card-body">
                     <h1 class="card-title">payment information</h1>
                     <form>
@@ -300,7 +299,7 @@
                           <input type="number" class="form-control rounded-pill" placeholder="Room Number"id="numberRoom">
                         </div>
                         <div>
-                          <button class="text-center btn btn-primary rounded-pill" style="max-width: 40%; justify-content: center;">place payment</button>
+                          <button class="text-center btn btn-primary btn-lg  rounded-pill" style="max-width: 60%; justify-content: center; font-weight: 700">place payment</button>
                         </div>
                       </div>
                     </form>
@@ -321,7 +320,7 @@
 <!--DRINKS MENU CARDS-->
 <section id="drinks">
   <div>
-    <img src="./img/drinks-title.png" style="max-width: 40%;"alt="Menu Section Title">
+    <img src="./img/drinks-title.png" class="mb-5" style="max-width: 40%;"alt="Drinks Section Title">
   </div>
   <div class="container">
     <div class="row">
@@ -471,10 +470,11 @@
           </div>        
       </div>
 </section>
+
 <!--DESSERT MENU CARDS-->
 <section id="desserts" style="margin-bottom: 60px;">
   <div>
-    <img src="./img/desserts-title.png" style="max-width: 40%; padding-left: 20px;"alt="Menu Section Title">
+    <img src="./img/desserts-title.png" class="ms-5 mb-5" style="max-width: 40%; padding-left: 20px;"alt="Desserts Section Title">
   </div>
 <div class="container">
   <div class="row">
