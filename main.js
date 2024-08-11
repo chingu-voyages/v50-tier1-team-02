@@ -177,7 +177,7 @@ tipButton15.addEventListener("click", () => {
 });
 tipButton20.addEventListener("click", () => {
   console.log("20 clicked");
-  console.log(Number(tip_20.innerText.slice(5, 9)));
+  console.log(Number(tip_20.innerText.slice(5, 10)));
 });
 
 orderBtn.addEventListener("click", () => alert("Send to Process Order."));
