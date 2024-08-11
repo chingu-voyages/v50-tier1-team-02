@@ -25,6 +25,7 @@ The UI/UX design is created using Figma and the file can be accessed here
 
 ## Features
 
+- Display menu items
 - View menu items
 - Add menu items to an order
 - Remove an item from the order list
