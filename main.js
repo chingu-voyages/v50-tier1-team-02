@@ -1,7 +1,6 @@
 
 //API for menu Items
 const API_URL = "https://menus-api.vercel.app/";
-const itemList = document.querySelector("#addItem");
 
 const selectedBbqIds = [
   "ribs-and-chicken-combo-pack-serves-6-8",
@@ -106,7 +105,6 @@ function renderElement(id, name, img, dsc, price){
 };
 
 // Order Cart
-
 const itemList = document.querySelector("#addItem");
 const addItemBtn = document.querySelector("#addItemBtn");
 const tallyUpOrders_list = document.querySelector("#tallyUpOrders_list");
