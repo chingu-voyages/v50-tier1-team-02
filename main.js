@@ -263,11 +263,10 @@ function tallyUpOrder(total) {
   grandTotal_element.innerHTML = `$${grandTotal.toFixed(2)}`;
 };
 
+/* maya's base
 tipButton10.addEventListener("click", () => {
   console.log("10 clicked");
   console.log(Number(tip_10.innerText.slice(5, 9)));
-
-  
 });
 
 tipButton15.addEventListener("click", () => {
@@ -278,6 +277,37 @@ tipButton15.addEventListener("click", () => {
 tipButton20.addEventListener("click", () => {
   console.log("20 clicked");
   console.log(Number(tip_20.innerText.slice(5, 10)));
+}); */
+
+tipButton10.addEventListener("click", () => {
+  console.log("10 clicked");
+  console.log(Number(tip_10.innerText.slice(5, 9)));
+
+  const tip10Calc = Number(tip_10.innerText.slice(5, 9));
+
+  const getGrandTotal = document.querySelector("#grandTotal");
+
+  const GrandTotal_10 = getGrandTotal + tip10Calc;
+  console.log(GrandTotal_10);
+
 });
+
+tipButton15.addEventListener("click", () => {
+  console.log("15 clicked");
+  console.log(Number(tip_15.innerText.slice(5, 9)));
+  
+  const tip15Calc = Number(tip_15.innerText.slice(5, 9));
+
+
+});
+tipButton20.addEventListener("click", () => {
+  console.log("20 clicked");
+  console.log(Number(tip_20.innerText.slice(5, 10)));
+  
+  const tip20Calc = Number(tip_20.innerText.slice(5, 10));
+
+
+});
+
 
 orderBtn.addEventListener("click", () => alert("Send to Process Order."));
