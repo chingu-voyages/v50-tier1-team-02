@@ -37,7 +37,7 @@ The UI/UX design is created using Figma and the file can be accessed here
 
 ## Our Team
 
-Team 02 members are amazing and talented. See more information below:
+Team 02 members are amazing and talented. See team members information below:
 
 - Ibkay: [GitHub](https://github.com/Ibkay1) / [LinkedIn](https://www.linkedin.com/in/abigail-afolabi/)
 - Enis: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
