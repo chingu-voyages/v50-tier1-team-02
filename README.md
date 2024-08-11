@@ -1,41 +1,36 @@
-# voyage-tasks
+# Barbecruise
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+![image](https://github.com/user-attachments/assets/ccd9fb2b-cd84-4530-a3d8-529a7a50fe03)
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+[Link to Barbecruise application](https://chingu-voyages.github.io/v50-tier1-team-02/)
 
-> Own it & Make it your Own!
+## Introduction
+This app was created for a new restaurant launching its first business on a luxury cruise ship. This project is a web application that allows passengers to order food from the comfort of their suites or any location on the cruise ship.
+
+## Project Details
+This website is a frontend application made as a part of 50th voyage organized by **Chingu**
+**Frontend**:
+
 
 ## Team Documents
 
-You may find these helpful as you work together to organize your project.
+Our Meeting agenda and notes can be found below:
 
-- [Team Project Ideas](./docs/team_project_ideas.md)
-- [Team Decision Log](./docs/team_decision_log.md)
+- [Voyage Kick Off](https://docs.google.com/document/d/1ZqYiw4DHtXUOQSKyt7TjITDDIr3IE_7Mum2b7Bl3lWw/edit)
+- [App feature Planning](https://docs.google.com/document/d/1P5nhjg1sf_kUB4c8c61Qj4qEiRPnaGT8T1s5dnF_y6I/edit)
 
-Meeting Agenda templates (located in the `/docs` directory in this repo):
 
-- Meeting - Voyage Kickoff --> ./docs/meeting-voyage_kickoff.docx
-- Meeting - App Vision & Feature Planning --> ./docs/meeting-vision_and_feature_planning.docx
-- Meeting - Sprint Retrospective, Review, and Planning --> ./docs/meeting-sprint_retrospective_review_and_planning.docx
-- Meeting - Sprint Open Topic Session --> ./docs/meeting-sprint_open_topic_session.docx
 
 ## Our Team
 
-Everyone on your team should add their name along with a link to their GitHub
+Our eam is filled wih amazing alen
 & optionally their LinkedIn profiles below. Do this in Sprint #1 to validate
 your repo access and to practice PR'ing with your team *before* you start
 coding!
 
-- Teammate name #1: [GitHub](https://github.com/Dev-Wy/) / [LinkedIn](https://linkedin.com/in/jakewyantdeveloper)
-- Teammate name #2: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Ibkay: [GitHub](https://github.com/Ibkay1) / [LinkedIn](https://www.linkedin.com/in/abigail-afolabi/)
+- Enis: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
 - Sam: [GitHub](https://github.com/Samuel-Driggs) / [LinkedIn](https://linkedin.com/in/Samuel-Angelos)
 - Jake: [GitHub](https://github.com/Dev-Wy/) / [LinkedIn](https://www.linkedin.com/in/jakewyantdeveloper/)
 - Valerie: [GitHub](https://github.com/val-ue)/ [LinkedIn](https://www.linkedin.com/in/valerielabideveloper/)
