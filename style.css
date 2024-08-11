@@ -5,7 +5,30 @@ body {
     font-weight: 700;
   }
 
-  section {
+section {
     margin-top: 5em;
-  }
+}
 
+#tallyUpOrders_container{
+    margin-top: 5%;
+    margin-left: 0%;
+}
+.card-footer{
+    margin-top: 2%;
+    border: 0;
+}
+#tallyUpOrders_buttons{
+    margin-top: 5%;
+}
+.tip-row{
+    justify-content: center;
+}
+.tip_container{
+    width: auto;
+}
+#orderBtn{
+    margin-top: 5%;
+}
+.tip-body{
+    padding: 0;
+}

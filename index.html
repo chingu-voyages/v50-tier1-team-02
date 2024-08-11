@@ -54,7 +54,7 @@
                       <h4 class="card-title" style="font-weight: 700;">Hog Heaven</h4>
                       <p class="card-text">Pulled Pork + Sausage Links</p>
                       <p class="card-text h6">$69.99</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button id="addItemBtn1" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -77,7 +77,7 @@
                       <h4 class="card-title" style="font-weight: 700;">Joe's KC BBQ</h4>
                       <p class="card-text">Brisket & Burnt Ends</p>
                       <p class="card-text h6">$110.99</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button id="addItemBtn2" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -100,7 +100,7 @@
                       <h4 class="card-title" style="font-weight: 700;">Dinosaur BBQ</h4>
                       <p class="card-text">Ribs & Chicken Combo Pack - Serves 6-8</p>
                       <p class="card-text h6">$129</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button id="addItemBtn3" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -127,7 +127,7 @@
                       <h4 class="card-title" style="font-weight: 700;">Micklethwait Craft Meats</h4>
                       <p class="card-text">BBQ Meat and Sides Feast</p>
                       <p class="card-text h6">$159</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button id="addItemBtn4" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -150,7 +150,7 @@
                       <h4 class="card-title" style="font-weight: 700;">Food Explorer</h4>
                       <p class="card-text">Carolina BBQ Pack</p>
                       <p class="card-text h6">$109</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button id="addItemBtn5" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -170,10 +170,15 @@
                   </div>
                   <div class="my-1 col-md-7 d-flex justify-content-end">
                     <div class="card-body ms-4" style="max-width: 100%;">
+<<<<<<< HEAD
                       <h4 class="card-title" style="font-weight: 700;">Legendary Brisket</h4>
                       <p class="card-text">Z-Man Sandwich Kit - 8 Pack</p>
+=======
+                      <h4 class="card-title" style="font-weight: 700;">Brisket Sandwich</h4>
+                      <p class="card-text">Legendary Brisket Z-Man Sandwich Kit - 8 Pack</p>
+>>>>>>> ff30f7d990d22e84ca6a45430d973feeaf4623af
                       <p class="card-text h6">$99.99</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button id="addItemBtn6" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -185,6 +190,7 @@
 <!-- Order Card -->
       <div class="col-md-4" id="ordercart">
         <div class="container text-center" id="tallyUpOrders_container">
+<<<<<<< HEAD
             <div class="row">
               <div class="col">
                 <div class="card mt-3 shadow-lg border-white" style="width: 100%; border-radius: 2.75rem; background-color: #e8e8e8">
@@ -200,14 +206,29 @@
                           <i class="fa-sharp-duotone fa-solid fa-burger fa-xl"></i> Add Item
                         </button>
                       </div>
+=======
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 100%; border-radius: 2.75rem; background-color: #e8e8e8">  
+                <div class="card-body">
+                  <h1 class="card-title">Your Order</h1>
+                  <ul
+                    class="list-group list-group-flush text-start"
+                    id="tallyUpOrders_list"
+                  ></ul>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="col text-start">Total:</div>
+                      <div class="col text-end" id="orderTotal"></div>
+>>>>>>> ff30f7d990d22e84ca6a45430d973feeaf4623af
                     </div>
-    
-                    <div class="card-footer">
-                      <div class="row">
-                        <div class="col text-start">Total</div>
-                        <div class="col text-end" id="orderTotal"></div>
-                      </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="col text-start">Tax:</div>
+                      <div class="col text-end" id="tax"></div>
                     </div>
+<<<<<<< HEAD
                     <div class="card-footer">
                       <div class="row">
                         <div class="col text-start">Subtotal</div>
@@ -228,35 +249,55 @@
                                   <span id="tenPercent"></span>
                                 </a>
                               </div>
+=======
+                  </div>
+                  <div class="card-footer tip">
+                    <div class="row">
+                      <div class="card-title text-start">Tip:</div>
+                      <div class="row tip-row">
+                        <div
+                          class="col-sm-6 mb-3 mb-sm-0 tip_container"
+                          id="tip_10"
+                        >
+                          <div class="card tip-card">
+                            <div class="card-body tip-body">
+                              <a href="#" class="btn btn-alert" id="ten" role="button">
+                                <h5 class="card-title">10%</h5>
+                                <span id="tip-10">0</span>
+                              </a>
+>>>>>>> ff30f7d990d22e84ca6a45430d973feeaf4623af
                             </div>
                           </div>
-                          <div
-                            class="col-sm-4 mb-3 mb-sm-0 tip_container"
-                            id="tip_15">
-                            <div class="card tip-card">
-                              <div class="card-body tip-body">
-                                <a href="#" class="btn btn-alert" role="button" style="padding: 0%; border: 0%;">
-                                  <h6 class="card-title d-flex justify-content-center">15%</h6>
-                                  <span id="fifteenPercent"></span>
-                                </a>
-                              </div>
+                        </div>
+                        <div
+                          class="col-sm-6 mb-3 mb-sm-0 tip_container"
+                          id="tip_15"
+                        >
+                          <div class="card tip-card">
+                            <div class="card-body tip-body">
+                              <a href="#" class="btn btn-alert" id="fifteen" role="button">
+                                <h5 class="card-title">15%</h5>
+                                <span id="tip-15">0</span>
+                              </a>
                             </div>
                           </div>
-                          <div
-                            class="col-sm-4 mb-3 mb-sm-0 tip_container"
-                            id="tip_20">
-                            <div class="card tip-card">
-                              <div class="card-body tip-body">
-                                <a href="#" class="btn btn-alert" role="button" style="padding: 0%; border: 0%;">
-                                  <h6 class="card-title d-flex justify-content-center">20%</h6>
-                                  <span id="twentyPercent"></span>
-                                </a>
-                              </div>
+                        </div>
+                        <div
+                          class="col-sm-6 mb-3 mb-sm-0 tip_container"
+                          id="tip_20"
+                        >
+                          <div class="card tip-card">
+                            <div class="card-body tip-body">
+                              <a href="#" class="btn btn-alert" id="twenty" role="button">
+                                <h5 class="card-title">20%</h5>
+                                <span id="tip-20">0</span>
+                              </a>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
+<<<<<<< HEAD
                     <div class="card-footer">
                       <div class="row">
                         <div class="col text-start">Total</div>
@@ -270,12 +311,36 @@
                         id="orderBtn">
                         <i class="fa-solid fa-cash-register fa-lg"></i> checkout
                       </button>
+=======
+                  </div>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="col text-start">Grand Total:</div>
+                      <div class="col text-end" id="grandTotal"></div>
+>>>>>>> ff30f7d990d22e84ca6a45430d973feeaf4623af
                     </div>
+                  </div>
+                  <div class="col text-end">
+                    <button
+                      type="button"
+                      class="btn btn-success btn-lg"
+                      id="orderBtn"
+                    >
+                      <i class="fa-solid fa-cash-register fa-lg"></i> Order
+                    </button>
                   </div>
                 </div>
               </div>
+<<<<<<< HEAD
           </div>            
         </div> 
+=======
+            </div>
+          </div>
+        </div>
+
+
+>>>>>>> ff30f7d990d22e84ca6a45430d973feeaf4623af
         <!--ordertally div ends-->
 
         <div id="payment"class="col-md-11 ms-2">
@@ -339,10 +404,10 @@
                   </div>
                   <div class="my-1 col-md-7 d-flex justify-content-end">
                     <div class="card-body ms-4" style="max-width: 100%;">
-                      <h4 class="card-title" style="font-weight: 700;">New Territories</h4>
+                      <h4 class="card-title" style="font-weight: 700;">Boba Tea Kit</h4>
                       <p class="card-text">Hong Kong Boba Tea Kit for 6</p>
                       <p class="card-text h6">$59</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button  id="addItemBtn7" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -365,7 +430,7 @@
                       <h4 class="card-title" style="font-weight: 700;">Woodford Reserve</h4>
                       <p class="card-text">Woodford Reserve Mint Julep Syrup</p>
                       <p class="card-text h6">$39</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button id="addItemBtn8"class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -388,7 +453,7 @@
                       <h4 class="card-title" style="font-weight: 700;">The Hummus & Pita Co.</h4>
                       <p class="card-text">Chickpea Chiller Kit for 6</p>
                       <p class="card-text h6">$89</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button id="addItemBtn9" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -415,7 +480,7 @@
                       <h4 class="card-title" style="font-weight: 700;">Dave's Coffee</h4>
                       <p class="card-text">Original Cold Brewed Coffee Syrup - 3 Pack</p>
                       <p class="card-text h6">$49</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button id="addItemBtn10" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -438,7 +503,7 @@
                       <h4 class="card-title" style="font-weight: 700;">Tipsy Scoop Boozy Ice Cream</h4>
                       <p class="card-text">Boozy Ice Cream Cocktail Party Kit</p>
                       <p class="card-text h6">$109</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button id="addItemBtn11" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -461,7 +526,7 @@
                       <h4 class="card-title" style="font-weight: 700;">Unicorn Parade Milkshake</h4>
                       <p class="card-text">Unicorn Parade Milkshake Kit for 8</p>
                       <p class="card-text h6">$109</p>
-                      <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                      <button id="addItemBtn12" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                     </div>
                   </div>
                 </div>
@@ -496,7 +561,7 @@
                     <h4 class="card-title" style="font-weight: 700;">Killer Brownie®</h4>
                     <p class="card-text">German Chocolate Killer Brownie®</p>
                     <p class="card-text h6">$39.99</p>
-                    <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                    <button id="addItemBtn13" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                   </div>
                 </div>
               </div>
@@ -519,7 +584,7 @@
                     <h4 class="card-title" style="font-weight: 700;">Jacques Torres Chocolate</h4>
                     <p class="card-text">Jacques’ World Famous Chocolate Chip Cookies - 6 Pack</p>
                     <p class="card-text h6">$39.95</p>
-                    <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                    <button id="addItemBtn14" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                   </div>
                 </div>
               </div>
@@ -542,7 +607,7 @@
                     <h4 class="card-title" style="font-weight: 700;">Crave Cupcakes</h4>
                     <p class="card-text">Best Seller Cupcake Dozen</p>
                     <p class="card-text h6">$89</p>
-                    <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                    <button id="addItemBtn15" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                   </div>
                 </div>
               </div>
@@ -569,7 +634,7 @@
                     <h4 class="card-title" style="font-weight: 700;">Junior's Cheesecake</h4>
                     <p class="card-text">Junior's Original Cheesecake</p>
                     <p class="card-text h6">$64.95</p>
-                    <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                    <button id="addItemBtn16" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                   </div>
                 </div>
               </div>
@@ -592,7 +657,7 @@
                     <h4 class="card-title" style="font-weight: 700;">Pietisserie</h4>
                     <p class="card-text">Raspberry Chocolate Pie</p>
                     <p class="card-text h6">$79</p>
-                    <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                    <button id="addItemBtn17" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                   </div>
                 </div>
               </div>
@@ -615,7 +680,7 @@
                     <h4 class="card-title" style="font-weight: 700;">Breads Bakery</h4>
                     <p class="card-text">Breads Chocolate and Cinnamon Babka - 3 Pack</p>
                     <p class="card-text h6">$49.95</p>
-                    <button class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
+                    <button id="addItemBtn18" class="btn btn-primary rounded-pill" style="font-family: 'Titillium Web', sans-serif; font-weight: 700; font-style: normal;">add to order</button>
                   </div>
                 </div>
               </div>
