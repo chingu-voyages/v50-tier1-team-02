@@ -285,10 +285,16 @@ tipButton10.addEventListener("click", () => {
 
   const tip10Calc = Number(tip_10.innerText.slice(5, 9));
 
-  const getGrandTotal = document.querySelector("#grandTotal");
+  const getGrandTotal_10 = document.querySelector("#grandTotal");
+  const grandTotalNumber = Number(getGrandTotal_10.innerText.slice(1));
+  console.log(grandTotalNumber);
 
-  const GrandTotal_10 = getGrandTotal + tip10Calc;
+  const grandTotal_10 = grandTotalNumber + tip10Calc;
   console.log(GrandTotal_10);
+  
+  
+  getGrandTotal_10.innerHTML = `$${(grandTotal_10).toFixed(2)}`;
+
 
 });
 
@@ -298,6 +304,16 @@ tipButton15.addEventListener("click", () => {
   
   const tip15Calc = Number(tip_15.innerText.slice(5, 9));
 
+  const getGrandTotal_15 = document.querySelector("#grandTotal");
+  const grandTotalNumber = Number(getGrandTotal_15.innerText.slice(1));
+  console.log(grandTotalNumber);
+
+  const grandTotal_15 = grandTotalNumber + tip15Calc;
+  console.log(grandTotal_15);
+  
+  
+  getGrandTotal_15.innerHTML = `$${(grandTotal_15).toFixed(2)}`;
+
 
 });
 tipButton20.addEventListener("click", () => {
@@ -305,6 +321,16 @@ tipButton20.addEventListener("click", () => {
   console.log(Number(tip_20.innerText.slice(5, 10)));
   
   const tip20Calc = Number(tip_20.innerText.slice(5, 10));
+
+  const getGrandTotal_20 = document.querySelector("#grandTotal");
+  const grandTotalNumber = Number(getGrandTotal_20.innerText.slice(1));
+  console.log(grandTotalNumber);
+
+  const grandTotal_20 = grandTotalNumber + tip20Calc;
+  console.log(grandTotal_20);
+  
+  
+  getGrandTotal_20.innerHTML = `$${(grandTotal_20).toFixed(2)}`;
 
 
 });
