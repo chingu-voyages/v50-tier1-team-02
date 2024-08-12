@@ -25,7 +25,7 @@ For the project management, the team used a [Trello board](https://trello.com/b/
 
 The UI/UX design is created using Figma and the file can be accessed here
 
-[Final Demo Details PowerPoint presentation here](https://drive.google.com/file/d/1T39B_W2R7J_Du_pG8qV-1zGDFLV4Ue2k/view?usp=sharing)
+[Final Demo Details PowerPoint presentation here](https://drive.google.com/file/d/1JhSZzd_OpvaVPbVc5EHySPJorSbETkeK/view?usp=sharing)
 
 ## Features
 
