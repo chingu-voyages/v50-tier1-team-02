@@ -10,7 +10,9 @@ This app was created for a new restaurant launching its first business on a luxu
 ## Project Details
 This website is a frontend application made as a part of the 50th voyage organized by **Chingu**
 
-**Frontend**:
+**Frontend**: Javascript, HTML, Bootstrap 5, Github, Git, CSS
+
+**Design**: Figma, Font Awesome
 
 ## Team Documents
 
@@ -23,18 +25,14 @@ For the project management, the team used a [Trello board](https://trello.com/b/
 
 The UI/UX design is created using Figma and the file can be accessed here
 
+[Final Demo Details PowerPoint presentation here](https://drive.google.com/file/d/1T39B_W2R7J_Du_pG8qV-1zGDFLV4Ue2k/view?usp=sharing)
+
 ## Features
 
 - Display menu items
-- View menu items
 - Add menu items to an order
-- Remove an item from the order list
 - Add a tip to order
 - Make payment
-
-## Technologies Used
-
-### Development and Design
 
 ## Our Team
 
