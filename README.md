@@ -23,7 +23,7 @@ Our Meeting agenda and notes can be found below:
 
 For the project management, the team used a [Trello board](https://trello.com/b/qx1vIxlU/restaurant-simulator-chingu-voyage-50-trello)
 
-The UI/UX design is created using Figma and the file can be accessed here
+The UI/UX design is created using Figma and the file can be accessed [here](https://docs.google.com/document/d/1-nB9qgYA5rLk3e8-Zp_Rg3QZCp60YfkM/edit?usp=sharing&ouid=115195842294115799494&rtpof=true&sd=true)
 
 [Final Demo Details PowerPoint presentation here](https://drive.google.com/file/d/1JhSZzd_OpvaVPbVc5EHySPJorSbETkeK/view?usp=sharing)
 
