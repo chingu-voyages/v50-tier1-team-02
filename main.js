@@ -215,4 +215,4 @@ tipButton20.addEventListener("click", (e) => {
 });
 
 
-orderBtn.addEventListener("click", () => alert("Send to Process Order."));
+orderBtn.addEventListener("click", () => alert("Thanks for ordering!"));
