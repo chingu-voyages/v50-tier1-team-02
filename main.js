@@ -1,108 +1,5 @@
+/*API used for for menu items: https://menus-api.vercel.app/ */
 
-/*API for menu Items
-const API_URL = "https://menus-api.vercel.app/";
-
-const selectedBbqIds = [
-  "ribs-and-chicken-combo-pack-serves-6-8",
-  "legendary-brisket-z-man-sandwich-kit-8-pack",
-  "ribs-brisket-and-burnt-ends",
-  "18650-food-explorer-carolina-bbq-pack",
-  "hog-heaven",
-  "bbq-meat-and-sides-feast-serves-15"
-];
-
-const selectedDessertIds = [
-  "002-cafe-du-monde-coffee-and-beignets",
-  "jacques-world-famous-chocolate-chip-cookies",
-  "15259-german-chocolate-killer-brownie-tin-pack",
-  "best-seller-cupcake-dozen",
-  "original-ny-plain-cheesecake",
-  "raspberry-chocolate-pie"
-];
-
-const selectedDrinkIds = [
-  "hong-kong-boba-tea-kit-for-6",
-  "woodford-reserve-mint-julep-syrup",
-  "unicorn-parade-milkshake-kit-for-8",
-  "002-original-cold-brewed-coffee-syrup",
-  "virtual-cocktail-party-kit",
-  "chickpea-chiller-kit-for-6"
-];
-
-
-
-async function getData() {
-  try {
-    const response = await fetch(API_URL);
-    if (response.ok) {
-      const data = await response.json();
-
-      const selectedBbqs = data.bbqs.filter(item => selectedBbqIds.includes(item.id));
-
-      const selectedDesserts = data.desserts.filter(item => selectedDessertIds.includes(item.id));
-   
-      const selectedDrinks = data.drinks.filter(item => selectedDrinkIds.includes(item.id));
-      console.log(selectedDesserts, selectedBbqs, selectedDrinks);
-
-      return ;
-
-
-    };
-  } catch (error) {
-    console.log(error);
-  };
-};
-
-
-
-const menuData = getData();
-
- 
-
-menuData.then((data)=>{
-    //iterrate through obj
-    //output ID and NAME
-    //send to be rendered
-
-
-    data.bbqs.map((i)=> {
-        console.log(i)
-        const {id, name, img, dsc, price} = i;
-        renderElement(id,name,img, dsc, price);
-    });
-    data.drinks.map((i)=> {
-      console.log(i)
-      const {id, name, img, dsc, price} = i;
-      renderElement(id,name,img, dsc, price);
-  });
-  data.desserts.map((i)=> {
-    console.log(i)
-    const {id, name, img, dsc, price} = i;
-    renderElement(id,name,img, dsc, price);
-});
-
-
-  
-});
-
-function renderElement(id, name, img, dsc, price){
-    //create new list element
-    //add card property to list item
-    //add id and name to element
-    //render list item card to page.
-    const listItem = document.createElement('li');
-    listItem.className = 'list-group-item';
-    listItem.innerHTML = `
-    <li class='list-group-item'>ID: ${id}</li>
-    <li class='list-group-item'>NAME: ${name}</li>
-    <li class='list-group-item'>DESCRIPTION: ${dsc}</li>
-    <img src="${img}" alt="${name}" class='list-group-img'/> 
-    <li class='list-group-item'>PRICE: ${price}</li>
-
-
-    `;
-    itemList.appendChild(listItem);
-}; */
 
 // Order Cart
 const itemList = document.querySelector("#addItem");
@@ -263,42 +160,25 @@ function tallyUpOrder(total) {
   grandTotal_element.innerHTML = `$${grandTotal.toFixed(2)}`;
 };
 
-/* maya's base
-tipButton10.addEventListener("click", () => {
+tipButton10.addEventListener("click", (e) => {
   console.log("10 clicked");
-  console.log(Number(tip_10.innerText.slice(5, 9)));
-});
-
-tipButton15.addEventListener("click", () => {
-  console.log("15 clicked");
-  console.log(Number(tip_15.innerText.slice(5, 9)));
-
-});
-tipButton20.addEventListener("click", () => {
-  console.log("20 clicked");
-  console.log(Number(tip_20.innerText.slice(5, 10)));
-}); */
-
-tipButton10.addEventListener("click", () => {
-  console.log("10 clicked");
-  console.log(Number(tip_10.innerText.slice(5, 9)));
-
-  const tip10Calc = Number(tip_10.innerText.slice(5, 9));
+  console.log(Number(tip_10.innerText.slice(5, 10)));
+  
+  const tip10Calc = Number(tip_10.innerText.slice(5, 10));
 
   const getGrandTotal_10 = document.querySelector("#grandTotal");
   const grandTotalNumber = Number(getGrandTotal_10.innerText.slice(1));
   console.log(grandTotalNumber);
 
   const grandTotal_10 = grandTotalNumber + tip10Calc;
-  console.log(GrandTotal_10);
+  console.log(grandTotal_10);
   
   
   getGrandTotal_10.innerHTML = `$${(grandTotal_10).toFixed(2)}`;
-
-
+  e.preventDefault();
 });
 
-tipButton15.addEventListener("click", () => {
+tipButton15.addEventListener("click", (e) => {
   console.log("15 clicked");
   console.log(Number(tip_15.innerText.slice(5, 9)));
   
@@ -313,10 +193,10 @@ tipButton15.addEventListener("click", () => {
   
   
   getGrandTotal_15.innerHTML = `$${(grandTotal_15).toFixed(2)}`;
-
-
+  e.preventDefault();
 });
-tipButton20.addEventListener("click", () => {
+
+tipButton20.addEventListener("click", (e) => {
   console.log("20 clicked");
   console.log(Number(tip_20.innerText.slice(5, 10)));
   
@@ -331,9 +211,8 @@ tipButton20.addEventListener("click", () => {
   
   
   getGrandTotal_20.innerHTML = `$${(grandTotal_20).toFixed(2)}`;
-
-
+  e.preventDefault();
 });
 
 
-orderBtn.addEventListener("click", () => alert("Send to Process Order."));
+orderBtn.addEventListener("click", () => alert("Thanks for ordering!"));
